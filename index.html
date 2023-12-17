@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Text Extractor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 align="center">Image Text Extractor</h1>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <input type="file" accept="image/*" id="imageInput" onchange="displayImage()" />
+            <button type="button" onclick="extractText()">Extract Text</button>
+        </form>
+        <div id="output">
+            <div id="imagePreview"></div>
+            <textarea id="outputTextArea" readonly></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
